@@ -18,7 +18,7 @@ app.secret_key = os.environ.get('SECRET_KEY', 'your-secret-key')
 MONGO_URI = "mongodb+srv://admin:Macbok123@logincluster.kybphm5.mongodb.net/?retryWrites=true&w=majority&appName=loginCluster"
 
 client = MongoClient(MONGO_URI)
-db = client["compressfast_db"]  # your database
+db = client["loginCluster"]  # your database
 users_collection = db["users"]  # your users collection
 
 
